@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1c1c1c;
+}
+
+.trashCan,
+.rightCircle,
+.leftCircle {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.trashCan {
+  background: url("./assets/css_sprites.png") -54px -10px;
+}
+
+.rightCircle,
+.leftCircle {
+  background: url("./assets/css_sprites.png") -10px -10px;
+}
+
+.leftCircle {
+  transform: rotate(180deg);
+}
+
+.rightCircle:hover,
+.trashCan:hover,
+.leftCircle:hover {
+  transform: scale(1.25);
+  filter: invert(100%);
+}
+
+.leftCircle:hover {
+  transform: rotate(180deg) scale(1.25);
+}
